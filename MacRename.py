@@ -1,7 +1,7 @@
 import subprocess
 
 #Opens computer name text ile
-comp = open("comp_names.txt")
+comp = open("comp_names.txt", "r")
 
 #Gathers current computer name
 current_name = subprocess.call(["scutil", "--get", "computerName"])
